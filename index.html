@@ -8,9 +8,9 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Portfolio Étudiant</a>
+            <a class="navbar-brand text-white" href="#">Portfolio Étudiant</a>
         </div>
     </nav>
     
@@ -54,22 +54,36 @@
             <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#experience">Expérience</a></li>
             <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#education">Parcours</a></li>
             <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#competences">Compétences</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#projets">Projets</a></li> <!-- Nouvel onglet Projets -->
         </ul>
         <div class="tab-content mt-3">
             <div class="tab-pane fade show active" id="experience">Détails des expériences :</br>
-                <b>2023 - 2024:</b></br>
-                Auchan Drive | Job Etudiant.
+                <!-- Section Expérience -->
+            <div class="d-flex align-items-center">
+                <img src="drive.jpg" class="img-fluid" style="width: 100px; height: 100px;" alt="Image drive" />
+                <div class="ms-3">
+                    <b>2023 - 2024:</b><br>
+                    Auchan Drive | Job Etudiant.<br>
+                    Louvroil- Nord (59)<br>
+                    Poste de préparateur/ livreur de commande.<br>
+                    Relation client / techniques de manutention
+                </div>
+            </div>
 
-                Louvroil- Nord (59)</br>
-                Poste de préparateur/ livreur de commande.
-                Relation client  / techniques de manutention</br></br>
-                <b>Juin - Aout 2024: </b>
-                Stage de 12 semaines </br>
-                Hôpital de Riaumont - Groupe AHNAC
-                Liévin - Pas De Calais (62)</br>
-                Assistant dans la DSIN (département Systèmes d’information et du Numérique 
-                Gestion de base de données et développement de requêtes HQL/SQL
-                Migration de base de données </div>
+            <!-- Section Stage -->
+            <div class="d-flex align-items-center mt-3">
+                <img src="ahnanc.png" class="img-fluid" style="width: 100px; height: 100px;" alt="Image drive" />
+                <div class="ms-3">
+                    <b>Juin - Aout 2024:</b><br>
+                    Stage de 12 semaines<br>
+                    Hôpital de Riaumont - Groupe AHNAC<br>
+                    Liévin - Pas De Calais (62)<br>
+                    Assistant dans la DSIN (département Systèmes d’information et du Numérique)<br>
+                    Gestion de base de données et développement de requêtes HQL/SQL<br>
+                    Migration de base de données
+                </div>
+            </div>
+</div>
             <div class="tab-pane fade" id="education">Détails :</br>
 
 
@@ -85,40 +99,54 @@
                 Lycée Jesse de Forest ( Avesnes-sur-Helpe)</br>
 
             </div>
-            <div class="tab-pane fade" id="competences">Liste des compétences... </br>
-                Création de sites web (HTML,CSS, javascript)</br>
-                Bases de données ( SQL Server, MySql…)</br>
-                langage Python</br>
-                C++, C, java/ PHP/ Dart/ Flutter</br>
+<div class="tab-pane fade" id="competences">
+    <ul class="list-unstyled">
+        <li class="d-flex align-items-center">
+            <i class="bi bi-code-slash me-2" style="font-size: 1.5rem;"></i> Création de sites web (HTML, CSS, JavaScript)
+        </li>
+        <li class="d-flex align-items-center">
+            <i class="bi bi-database me-2" style="font-size: 1.5rem;"></i> Bases de données (SQL Server, MySQL…)
+        </li>
+        <li class="d-flex align-items-center">
+            <i class="bi bi-py-file me-2" style="font-size: 1.5rem;"></i> Langage Python
+        </li>
+        <li class="d-flex align-items-center">
+            <i class="bi bi-c-circle me-2" style="font-size: 1.5rem;"></i> C++, C
+        </li>
+        <li class="d-flex align-items-center">
+            <i class="bi bi-java me-2" style="font-size: 1.5rem;"></i> Java
+        </li>
+        <li class="d-flex align-items-center">
+            <i class="bi bi-file-earmark-code me-2" style="font-size: 1.5rem;"></i> PHP, Dart, Flutter
+        </li>
+    </ul>
+</div>
 
+            <div class="tab-pane fade" id="projets"> <!-- Contenu de l'onglet Projets -->
+                <div id="projetCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p>Jeu vidéo en 3D avec Unity</p>
+                            <img src="projet1.jpg" class="img-fluid w-25">
+                            <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#projet1Modal">En savoir plus</button>
+                        </div>
+                        <div class="carousel-item">
+                            <p>Tracker de cycles de sommeil en CakePHP            &nbsp;    &nbsp;&nbsp;             <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#projet2Modal">En savoir plus</button>
+                            </p>
+                            <img src="projet2.jpg" class="d-block w-50">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projetCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projetCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Carrousel (au secours) -->
-    <div id="projetCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <p>Jeu vidéo en 3D avec Unity</p>
-                <img src="projet1.jpg" class="img-fluid w-25">
-                <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#projet1Modal">En savoir plus</button>
-            </div>
-            <div class="carousel-item">
-
-                <p>Tracker de cycles de sommeil en CakePHP         &nbsp;        <button class="btn btn-primary ms-9" data-bs-toggle="modal" data-bs-target="#projet2Modal">En savoir plus</button>
-                </p>
-
-                <img src="projet2.jpg" class="d-block w-50">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#projetCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#projetCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
     
     <!-- Modales pour les projets -->
@@ -145,8 +173,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Site intenet codé en CakePHP qui consiste a entrer son heure de lever et de coucher pour suveiller vos cycles de sommeil. 
-                        Il permet de voir si vous avez assez dormi et/ou pourquoi vous etes fatigué au reveil car souvent quand on se reveille au milieu d'un cycle, on se sent très fatigué car il n'a pas été complété.</p>
+                    <p>Site internet codé en CakePHP qui consiste à entrer son heure de lever et de coucher pour surveiller vos cycles de sommeil. Il permet de voir si vous avez assez dormi et/ou pourquoi vous êtes fatigué au réveil car souvent, quand on se réveille au milieu d'un cycle, on se sent très fatigué car il n'a pas été complété.</p>
                 </div>
             </div>
         </div>
