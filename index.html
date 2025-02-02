@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Étudiant</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-    
 </head>
 <body>
     <!-- Navbar -->
@@ -21,13 +20,13 @@
             <img src="photo.jpg" class="card-img-top w-25 mx-auto mt-3" alt="Votre Photo">
             <div class="card-body">
                 <h5 class="card-title">Duchene Cedric</h5>
-                <p class="card-text">étudiant en Licence professionelle développement d'applications web et mobile .</p>
+                <p class="card-text">étudiant en Licence professionnelle développement d'applications web et mobile.</p>
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#motivationModal">Voir Lettre de Motivation</button>
             </div>
         </div>
     </div>
     
-    <!-- Modale pour la lettre -->
+    <!-- Modale pour la lettre de motivation -->
     <div class="modal fade" id="motivationModal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -37,27 +36,19 @@
                 </div>
                 <div class="modal-body">
                     <p>
-
                         Madame, Monsieur</br></br>
-
-      Passionné par le développement d’applications et le domaine de la programmation,
-j’ai pu à l’université Polytechnique de Valenciennes me former au développement d’applications web et mobile ainsi qu’à la gestion des bases de données. Aujourd’hui je souhaiterais répondre a votre offre de stage et mettre mes compétences acquises au service de votre entreprise afin de compléter ma formation professionnelle.</br></br>
-
-      J’aimerais me voir confier des missions dans le développement d’applications mobiles et web,  la création/ gestion de site web (html / css, Javascript), la gestion de bases de données (SQL/ HQL...), la gestion et/ou l’installation de postes informatiques.</br></br>
-J’ai également acquis des compétences dans le domaine de la programmation notamment en Java/C++/C# et Python.
-
-      Ma capacité d'adaptation, ma rigueur et mon esprit d'équipe sont autant d'atouts que je suis prêt à mettre au service de vos projets. Je serais honoré de travailler au sein de votre équipe et je reste à votre disposition pour vous rencontrer à votre convenance.</br></br>
-
-                        Je vous prie d'agréer Madame Monsieur, l'expression de mes salutations distinguées.  </br></br>
-
-
-Cédric Duchene</p>
+                        Passionné par le développement d’applications et le domaine de la programmation, j’ai pu à l’université Polytechnique de Valenciennes me former au développement d’applications web et mobile ainsi qu’à la gestion des bases de données. Aujourd’hui je souhaiterais répondre à votre offre de stage et mettre mes compétences acquises au service de votre entreprise afin de compléter ma formation professionnelle.</br></br>
+                        J’aimerais me voir confier des missions dans le développement d’applications mobiles et web, la création/gestion de site web (HTML/CSS, Javascript), la gestion de bases de données (SQL/HQL...), la gestion et/ou l’installation de postes informatiques.</br></br>
+                        J’ai également acquis des compétences dans le domaine de la programmation notamment en Java/C++/C# et Python.</br></br>
+                        Ma capacité d'adaptation, ma rigueur et mon esprit d'équipe sont autant d'atouts que je suis prêt à mettre au service de vos projets. Je serais honoré de travailler au sein de votre équipe et je reste à votre disposition pour vous rencontrer à votre convenance.</br></br>
+                        Je vous prie d'agréer Madame Monsieur, l'expression de mes salutations distinguées.</br></br>
+                        Cédric Duchene
+                    </p>
                 </div>
             </div>
         </div>
     </div>
     
-    <!-- Tabs -->
     <div class="container mt-4">
         <ul class="nav nav-tabs" id="cvTabs" role="tablist">
             <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#experience">Expérience</a></li>
@@ -107,12 +98,58 @@ Cédric Duchene</p>
     <!-- Carrousel (au secours) -->
     <div id="projetCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active"><p>Jeu video en 3d avec unity</p> <img src="projet1.jpg" class="img-fluid w-25"></div>
-            <div class="carousel-item"><img src="projet2.jpg" class="d-block w-100"></div>
-            <div class="carousel-item"><img src="projet3.jpg" class="d-block w-100"></div>
+            <div class="carousel-item active">
+                <p>Jeu vidéo en 3D avec Unity</p>
+                <img src="projet1.jpg" class="img-fluid w-25">
+                <button class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#projet1Modal">En savoir plus</button>
+            </div>
+            <div class="carousel-item">
+
+                <p>Tracker de cycles de sommeil en CakePHP         &nbsp;        <button class="btn btn-primary ms-9" data-bs-toggle="modal" data-bs-target="#projet2Modal">En savoir plus</button>
+                </p>
+
+                <img src="projet2.jpg" class="d-block w-50">
+            </div>
         </div>
-        <button class="carousel-control-prev" data-bs-target="#projetCarousel" data-bs-slide="prev">&lt;</button>
-        <button class="carousel-control-next" data-bs-target="#projetCarousel" data-bs-slide="next">&gt;</button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projetCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projetCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <!-- Modales pour les projets -->
+    <div class="modal fade" id="projet1Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jeu vidéo en 3D avec Unity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Un jeu de voiture très simple qui consiste a parcourir un circuit a l'aide d'une voiture que l'on peu choisir parmis plusieurs autres et avoir le meilleur chrono
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projet2Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tracker de cycles de sommeil en CakePHP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Site intenet codé en CakePHP qui consiste a entrer son heure de lever et de coucher pour suveiller vos cycles de sommeil. 
+                        Il permet de voir si vous avez assez dormi et/ou pourquoi vous etes fatigué au reveil car souvent quand on se reveille au milieu d'un cycle, on se sent très fatigué car il n'a pas été complété.</p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <!-- Bootstrap -->
